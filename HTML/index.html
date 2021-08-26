@@ -7,16 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Encontre no Google</h1>
-    <form action="https://www.google.com/search">
-        <label for="q">O que deseja pesquisar?</label>
-        <input type="text" id="q" name="q" placeholder="pesquise aqui" required>
-        <!--'for' é para referenciar esse label e dps ser identificado pelo id="q" 
-        e placeholder é oq aparece de fundo na caixa de entrada. 
-        Required mostra que o campo é requerido.
-        min="" ou max="" para numeros.
-        -->
-        <input type="submit" value="Pesquisar">
+    <title>Cadastro da liga dos astronautas</title>
+    <form action="">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="NOME">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="EMAIL">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="PASSWORD">
+        </div>
+        ...
+        <div>
+            <!--campo com opções de seleção-->
+            <label for="nationality">sdfsd</label>
+            <select name="nationality" id="nationality">
+                <option value="russian">Russa</option>
+                <option value="american">Americana</option>
+                <option value="brasilian">Brasileira</option>
+            </select>
+
+            Genero:
+            <!--input type=radio são os de selecionar. 
+            Para mandar so 1 como resposta ao servidor, todos devem ter o mesmo name="gender".
+            -->
+            <label for="female">F</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="male">M</label>
+            <input type="radio" id="male" name="gender" value="male">
+        </div>
+        <div>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="criar" >
+        </div>
     </form>
+    
 </body>
 </html>
